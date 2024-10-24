@@ -23,7 +23,7 @@ Ovaj skup podataka obuhvaća informacije o automatskim vanjskim defibrilatorima 
   - **vrsta_elektrode**: Tip elektroda (npr. CPR-D, Stat Padz II, pedijatrijske).
   - **rok_trajanja_elektrode**: Datum isteka elektroda.
 - **Datum posljednje izmjene**: 24. listopad 2024.
-- **Učestalost ažuriranja**:
+- **Učestalost ažuriranja**: Jednom godišnje
 - **Izvor podataka**: Podaci su prikupljeni od zdravstvenih i hitnih službi te kroz javno dostupne registre.
 - **Korištenje skupa podataka**: Ovi podaci mogu biti korišteni u aplikacijama za hitne intervencije, planiranje medicinske infrastrukture, istraživanja te za edukaciju o važnosti pristupa AVD-ima.
 - **Ograničenja**: Skup podataka ne sadrži podatke o stvarnom stanju ispravnosti uređaja, što se mora redovito provjeravati od strane vlasnika.

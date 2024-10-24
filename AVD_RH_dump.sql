@@ -5,7 +5,7 @@
 -- Dumped from database version 15.2
 -- Dumped by pg_dump version 15.2
 
--- Started on 2024-10-24 13:57:34
+-- Started on 2024-10-24 15:36:17
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -23,7 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 217 (class 1259 OID 65183)
+-- TOC entry 217 (class 1259 OID 65220)
 -- Name: defibrillators; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -44,7 +44,7 @@ CREATE TABLE public.defibrillators (
 ALTER TABLE public.defibrillators OWNER TO postgres;
 
 --
--- TOC entry 216 (class 1259 OID 65182)
+-- TOC entry 216 (class 1259 OID 65219)
 -- Name: defibrillators_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -69,7 +69,7 @@ ALTER SEQUENCE public.defibrillators_id_seq OWNED BY public.defibrillators.id;
 
 
 --
--- TOC entry 219 (class 1259 OID 65198)
+-- TOC entry 219 (class 1259 OID 65235)
 -- Name: electrodes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -85,7 +85,7 @@ CREATE TABLE public.electrodes (
 ALTER TABLE public.electrodes OWNER TO postgres;
 
 --
--- TOC entry 218 (class 1259 OID 65197)
+-- TOC entry 218 (class 1259 OID 65234)
 -- Name: electrodes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -110,7 +110,7 @@ ALTER SEQUENCE public.electrodes_id_seq OWNED BY public.electrodes.id;
 
 
 --
--- TOC entry 215 (class 1259 OID 65174)
+-- TOC entry 215 (class 1259 OID 65211)
 -- Name: owners; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -124,7 +124,7 @@ CREATE TABLE public.owners (
 ALTER TABLE public.owners OWNER TO postgres;
 
 --
--- TOC entry 214 (class 1259 OID 65173)
+-- TOC entry 214 (class 1259 OID 65210)
 -- Name: owners_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -149,7 +149,7 @@ ALTER SEQUENCE public.owners_id_seq OWNED BY public.owners.id;
 
 
 --
--- TOC entry 3184 (class 2604 OID 65186)
+-- TOC entry 3184 (class 2604 OID 65223)
 -- Name: defibrillators id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -157,7 +157,7 @@ ALTER TABLE ONLY public.defibrillators ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 3188 (class 2604 OID 65201)
+-- TOC entry 3188 (class 2604 OID 65238)
 -- Name: electrodes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -165,7 +165,7 @@ ALTER TABLE ONLY public.electrodes ALTER COLUMN id SET DEFAULT nextval('public.e
 
 
 --
--- TOC entry 3183 (class 2604 OID 65177)
+-- TOC entry 3183 (class 2604 OID 65214)
 -- Name: owners id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -173,17 +173,17 @@ ALTER TABLE ONLY public.owners ALTER COLUMN id SET DEFAULT nextval('public.owner
 
 
 --
--- TOC entry 3342 (class 0 OID 65183)
+-- TOC entry 3342 (class 0 OID 65220)
 -- Dependencies: 217
 -- Data for Name: defibrillators; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.defibrillators (id, serial_number, model, publicly_accessible, connected_to_ems, owner_id, installation_date, last_service_date, next_service_date, location_address) FROM stdin;
 1	X12L580716	Zoll AED 3	t	t	1	\N	2024-01-10	2025-01-10	Trg kralja Tomislava 12
-2	Y13H023789	Zoll AED 3	f	f	2	\N	\N	2022-03-15	Ante Šercera 4b, Dubrovnik
-3	X13K634321	Zoll AED Pro	f	f	3	\N	2020-09-15	2021-09-15	Tisno BB, Opuzen
-4	X07E114767	Zoll AED+	f	f	4	\N	2021-02-02	2022-02-02	Padre Perice 6, Dubrovnik"
-5	X13H620715	Zoll AED+	f	t	5	2020-03-12	2020-03-12	2021-03-12	Avenija Gojka Šuška 1
+2	Y13H023789	Zoll AED 3	f	f	2	\N	\N	2025-03-15	Ante Šercera 4b, Dubrovnik
+3	X13K634321	Zoll AED Pro	f	f	3	\N	2024-09-15	2025-09-15	Tisno BB, Opuzen
+4	X07E114767	Zoll AED+	f	f	4	\N	2024-02-02	2025-02-02	Padre Perice 6, Dubrovnik"
+5	X13H620715	Zoll AED+	f	t	5	2020-03-12	2024-03-12	2025-03-12	Avenija Gojka Šuška 1
 6	X20K317210	Zoll AED 3	f	t	6	2020-04-03	2024-04-03	2025-04-03	Ulica Aleksandra Hondla 2/9, Zagreb
 7	X17C903307	Zoll AED 3	t	t	7	\N	2024-09-29	2025-09-29	Trg Nevenke Topalušić 1, 10000 Zagreb
 8	X14E676604	Zoll AED+	f	f	8	2014-10-17	2024-10-17	2025-10-17	Vinogradska 29, Zagreb
@@ -193,7 +193,7 @@ COPY public.defibrillators (id, serial_number, model, publicly_accessible, conne
 
 
 --
--- TOC entry 3344 (class 0 OID 65198)
+-- TOC entry 3344 (class 0 OID 65235)
 -- Dependencies: 219
 -- Data for Name: electrodes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -215,7 +215,7 @@ COPY public.electrodes (id, defibrillator_id, serial_number, type, expiration_da
 
 
 --
--- TOC entry 3340 (class 0 OID 65174)
+-- TOC entry 3340 (class 0 OID 65211)
 -- Dependencies: 215
 -- Data for Name: owners; Type: TABLE DATA; Schema: public; Owner: postgres
 --
@@ -261,7 +261,7 @@ SELECT pg_catalog.setval('public.owners_id_seq', 9, true);
 
 
 --
--- TOC entry 3192 (class 2606 OID 65191)
+-- TOC entry 3192 (class 2606 OID 65228)
 -- Name: defibrillators defibrillators_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -270,7 +270,7 @@ ALTER TABLE ONLY public.defibrillators
 
 
 --
--- TOC entry 3194 (class 2606 OID 65203)
+-- TOC entry 3194 (class 2606 OID 65240)
 -- Name: electrodes electrodes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -279,7 +279,7 @@ ALTER TABLE ONLY public.electrodes
 
 
 --
--- TOC entry 3190 (class 2606 OID 65181)
+-- TOC entry 3190 (class 2606 OID 65218)
 -- Name: owners owners_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -288,7 +288,7 @@ ALTER TABLE ONLY public.owners
 
 
 --
--- TOC entry 3195 (class 2606 OID 65192)
+-- TOC entry 3195 (class 2606 OID 65229)
 -- Name: defibrillators defibrillators_owner_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -297,7 +297,7 @@ ALTER TABLE ONLY public.defibrillators
 
 
 --
--- TOC entry 3196 (class 2606 OID 65204)
+-- TOC entry 3196 (class 2606 OID 65241)
 -- Name: electrodes electrodes_defibrillator_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -305,7 +305,7 @@ ALTER TABLE ONLY public.electrodes
     ADD CONSTRAINT electrodes_defibrillator_id_fkey FOREIGN KEY (defibrillator_id) REFERENCES public.defibrillators(id) ON DELETE CASCADE;
 
 
--- Completed on 2024-10-24 13:57:34
+-- Completed on 2024-10-24 15:36:18
 
 --
 -- PostgreSQL database dump complete

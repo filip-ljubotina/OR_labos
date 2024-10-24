@@ -1,0 +1,202 @@
+[
+    {
+        "serijski_broj_defibrilatora": "X12L580716",
+        "ime_vlasnika": "Nastavni zavod za hitnu medicinu Grada Zagreba",
+        "adresa_vlasnika": "Heinzelova 88, Zagreb",
+        "model_defibrilatora": "Zoll AED 3",
+        "lokacija_defibrilatora": "Trg kralja Tomislava 12",
+        "javno_dostupan": "t",
+        "povezan_s_hitnom_službom": "t",
+        "datum_instalacije": "",
+        "datum_zadnjeg_servisa": "2024-01-10",
+        "datum_sljedećeg_servisa": "2025-01-10",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X12L580716_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            },
+            {
+                "serijski_broj_elektrode": "X12L580716_STATPAD",
+                "vrsta_elektrode": "Stat Padz II",
+                "rok_trajanja_elektrode": "2026-06-30"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "Y13H023789",
+        "ime_vlasnika": "Zavod za hitnu medicinu Dubrovačko-neretvanske županije",
+        "adresa_vlasnika": "Ante Šercera 4b, Dubrovnik",
+        "model_defibrilatora": "Zoll AED 3",
+        "lokacija_defibrilatora": "Ante Šercera 4b, Dubrovnik",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "f",
+        "datum_instalacije": "",
+        "datum_zadnjeg_servisa": "",
+        "datum_sljedećeg_servisa": "2025-03-15",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "Y13H023789_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X13K634321",
+        "ime_vlasnika": "HGSS - Stanica Dubrovnik",
+        "adresa_vlasnika": "Liechtensteinov put 31A, Dubrovnik",
+        "model_defibrilatora": "Zoll AED Pro",
+        "lokacija_defibrilatora": "Tisno BB, Opuzen",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "f",
+        "datum_instalacije": "",
+        "datum_zadnjeg_servisa": "2024-09-15",
+        "datum_sljedećeg_servisa": "2025-09-15",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X13K634321_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            },
+            {
+                "serijski_broj_elektrode": "X13K634321_STATPAD",
+                "vrsta_elektrode": "Stat Padz II",
+                "rok_trajanja_elektrode": "2026-06-30"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X07E114767",
+        "ime_vlasnika": "Poliklinika \"Dr. Brajčić",
+        "adresa_vlasnika": "Padre Perice 6, Dubrovnik",
+        "model_defibrilatora": "Zoll AED+",
+        "lokacija_defibrilatora": "Padre Perice 6, Dubrovnik",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "f",
+        "datum_instalacije": "",
+        "datum_zadnjeg_servisa": "2024-02-02",
+        "datum_sljedećeg_servisa": "2025-02-02",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X07E114767_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X13H620715",
+        "ime_vlasnika": "Ministarstvo unutarnjih poslova RH",
+        "adresa_vlasnika": "Ilica 335, Zagreb",
+        "model_defibrilatora": "Zoll AED+",
+        "lokacija_defibrilatora": "Avenija Gojka Šuška 1",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "t",
+        "datum_instalacije": "2020-03-12",
+        "datum_zadnjeg_servisa": "2024-03-12",
+        "datum_sljedećeg_servisa": "2025-03-12",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X13H620715_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X20K317210",
+        "ime_vlasnika": "Kardian d.o.o.",
+        "adresa_vlasnika": "Ulica Aleksandra Hondla 2/9, Zagreb",
+        "model_defibrilatora": "Zoll AED 3",
+        "lokacija_defibrilatora": "Ulica Aleksandra Hondla 2/9, Zagreb",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "t",
+        "datum_instalacije": "2020-04-03",
+        "datum_zadnjeg_servisa": "2024-04-03",
+        "datum_sljedećeg_servisa": "2025-04-03",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X20K317210_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X17C903307",
+        "ime_vlasnika": "Ministarstvo hrvatskih branitelja",
+        "adresa_vlasnika": "Trg Nevenke Topalušić 1, Zagreb",
+        "model_defibrilatora": "Zoll AED 3",
+        "lokacija_defibrilatora": "Trg Nevenke Topalušić 1, 10000 Zagreb",
+        "javno_dostupan": "t",
+        "povezan_s_hitnom_službom": "t",
+        "datum_instalacije": "",
+        "datum_zadnjeg_servisa": "2024-09-29",
+        "datum_sljedećeg_servisa": "2025-09-29",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X17C903307_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X14E676604",
+        "ime_vlasnika": "KBC \"Sestre milosrdnice",
+        "adresa_vlasnika": "Vinogradska 29, Zagreb",
+        "model_defibrilatora": "Zoll AED+",
+        "lokacija_defibrilatora": "Vinogradska 29, Zagreb",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "f",
+        "datum_instalacije": "2014-10-17",
+        "datum_zadnjeg_servisa": "2024-10-17",
+        "datum_sljedećeg_servisa": "2025-10-17",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X14E676604_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X14E677441",
+        "ime_vlasnika": "KBC \"Sestre milosrdnice",
+        "adresa_vlasnika": "Vinogradska 29, Zagreb",
+        "model_defibrilatora": "Zoll AED 3",
+        "lokacija_defibrilatora": "Vinogradska 29, Zagreb",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "f",
+        "datum_instalacije": "2014-10-17",
+        "datum_zadnjeg_servisa": "2024-10-17",
+        "datum_sljedećeg_servisa": "2025-10-17",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X14E677441_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    },
+    {
+        "serijski_broj_defibrilatora": "X16H859351",
+        "ime_vlasnika": "Dječja bolnica Srebrnjak",
+        "adresa_vlasnika": "Srebrnjak 100, Zagreb",
+        "model_defibrilatora": "Zoll AED 3",
+        "lokacija_defibrilatora": "Srebrnjak 100, Zagreb, Dnevna bolnica",
+        "javno_dostupan": "f",
+        "povezan_s_hitnom_službom": "t",
+        "datum_instalacije": "",
+        "datum_zadnjeg_servisa": "2024-05-10",
+        "datum_sljedećeg_servisa": "2025-05-10",
+        "elektrode": [
+            {
+                "serijski_broj_elektrode": "X16H859351_CPRD",
+                "vrsta_elektrode": "CPR-D",
+                "rok_trajanja_elektrode": "2025-12-31"
+            }
+        ]
+    }
+]

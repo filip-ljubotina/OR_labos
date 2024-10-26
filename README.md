@@ -24,6 +24,6 @@ Ovaj skup podataka obuhvaća informacije o automatskim vanjskim defibrilatorima 
   - **rok_trajanja_elektrode**: Datum isteka elektroda.
 - **Datum posljednje izmjene**: 24. listopad 2024.
 - **Učestalost ažuriranja**: Jednom godišnje
-- **Izvor podataka**: Podaci su prikupljeni od zdravstvenih i hitnih službi te kroz javno dostupne registre.
+- **Geografska pokrivenost**: Republika Hrvatska
 - **Korištenje skupa podataka**: Ovi podaci mogu biti korišteni u aplikacijama za hitne intervencije, planiranje medicinske infrastrukture, istraživanja te za edukaciju o važnosti pristupa AVD-ima.
-- **Ograničenja**: Skup podataka ne sadrži podatke o stvarnom stanju ispravnosti uređaja, što se mora redovito provjeravati od strane vlasnika.
+- **Ograničenja**: Skup podataka ne sadrži podatke o stvarnom stanju ispravnosti uređaja.

@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://localhost:3000/AVD_RH.json",
+  "type": "array",
+  "title": "AVD u RH",
+  "description": "Skup podataka o AVD uređajima u Hrvatskoj",
+  "items": {
+    "type": "object",
+    "title": "AVD",
+    "description": "Objekt koji sadrži sve podatke o jednom AVD uređaju",
+    "required": [
+      "serijski broj defibrilatora",
+      "ime vlasnika",
+      "adresa vlasnika",
+      "model defibrilatora",
+      "lokacija defibrilatora",
+      "javno dostupan",
+      "povezan s hitnom službom",
+      "datum instalacije",
+      "datum zadnjeg servisa",
+      "datum sljedećeg servisa",
+      "elektrode"
+    ],
+    "properties": {
+      "serijski broj defibrilatora": {
+        "type": "string",
+        "title": "Serijski broj defibrilatora",
+        "description": "Jedinstveni serijski broj defibrilatora"
+      },
+      "ime vlasnika": {
+        "type": "string",
+        "title": "Ime vlasnika",
+        "description": "Ime vlasnika ili organizacije koja posjeduje defibrilator"
+      },
+      "adresa vlasnika": {
+        "type": "string",
+        "title": "Adresa vlasnika",
+        "description": "Adresa na kojoj se nalazi vlasnik defibrilatora"
+      },
+      "model defibrilatora": {
+        "type": "string",
+        "title": "Model defibrilatora",
+        "description": "Specifični model defibrilatora"
+      },
+      "lokacija defibrilatora": {
+        "type": "string",
+        "title": "Lokacija defibrilatora",
+        "description": "Točna lokacija defibrilatora (npr. adresa ili koordinati)"
+      },
+      "javno dostupan": {
+        "type": "string",
+        "title": "Javno dostupan",
+        "description": "Status javne dostupnosti defibrilatora ('Da' ili 'Ne')"
+      },
+      "povezan s hitnom službom": {
+        "type": "string",
+        "title": "Povezan s hitnom službom",
+        "description": "Indikacija je li defibrilator povezan s hitnim službama ('Da' ili 'Ne')"
+      },
+      "datum instalacije": {
+        "type": "string",
+        "title": "Datum instalacije",
+        "description": "Datum kada je defibrilator instaliran"
+      },
+      "datum zadnjeg servisa": {
+        "type": "string",
+        "title": "Datum zadnjeg servisa",
+        "description": "Datum kada je defibrilator posljednji put servisiran"
+      },
+      "datum sljedećeg servisa": {
+        "type": "string",
+        "title": "Datum sljedećeg servisa",
+        "description": "Datum kada je planiran sljedeći servis defibrilatora"
+      },
+      "elektrode": {
+        "type": "array",
+        "title": "Elektrode",
+        "description": "Popis elektroda koje su povezane s defibrilatorom",
+        "items": {
+          "type": "object",
+          "title": "Elektroda",
+          "required": [
+            "serijski broj elektrode",
+            "vrsta elektrode",
+            "rok trajanja elektrode"
+          ],
+          "properties": {
+            "serijski broj elektrode": {
+              "type": "string",
+              "title": "Serijski broj elektrode",
+              "description": "Jedinstveni serijski broj elektrode"
+            },
+            "vrsta elektrode": {
+              "type": "string",
+              "title": "Vrsta elektrode",
+              "description": "Tip elektrode (npr. za odrasle ili za djecu)"
+            },
+            "rok trajanja elektrode": {
+              "type": "string",
+              "title": "Rok trajanja elektrode",
+              "description": "Datum isteka roka trajanja elektrode"
+            }
+          }
+        }
+      }
+    }
+  }
+}

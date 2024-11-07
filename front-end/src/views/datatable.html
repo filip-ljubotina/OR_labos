@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display with Grid.js</title>
+    <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+</head>
+
+<body>
+    <div>
+        <label for="column-select">Filter by column:</label>
+        <select id="column-select">
+            <option value="all">Svi stupci</option>
+            <option value="serial_number">Serijski broj defibrilatora</option>
+            <option value="model">Model defibrilatora</option>
+            <option value="publicly_accessible">Javno dostupan</option>
+            <option value="connected_to_ems">Povezan s hitnom službom</option>
+            <option value="installation_date">Datum instalacije</option>
+            <option value="last_service_date">Datum zadnjeg servisa</option>
+            <option value="next_service_date">Datum sljedećeg servisa</option>
+            <option value="location_address">Lokacija defibrilatora</option>
+            <option value="serial_number_2">Serijski broj elektrode</option>
+            <option value="type">Vrsta elektrode</option>
+            <option value="expiration_date">Rok trajanja elektrode</option>
+            <option value="name">Ime vlasnika</option>
+            <option value="address">Adresa vlasnika</option>
+        </select>
+
+        <input type="text" id="search-input" placeholder="Enter search text" />
+        <button id="export-csv">Export CSV</button>
+        <button id="export-json">Export JSON</button>
+    </div>
+
+    <div id="grid-table"></div>
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

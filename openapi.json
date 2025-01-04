@@ -1,0 +1,383 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Defibrillator and Owner API",
+    "version": "1.0.1",
+    "description": "API for managing owners, defibrillators, and electrodes.",
+    "contact": {
+      "name": "Filip Ljubotina",
+      "email": "filip.ljubotina@fer.hr"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "paths": {
+    "/api/v1/owners": {
+      "get": {
+        "summary": "Fetch all owners",
+        "operationId": "getAllOwners",
+        "responses": {
+          "200": {
+            "description": "List of all owners",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseListOwner"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new owner",
+        "operationId": "createOwner",
+        "requestBody": {
+          "description": "Owner object in JSON format",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Owner"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created owner",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseOwner"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/owners/{id}": {
+      "get": {
+        "summary": "Fetch owner by ID",
+        "operationId": "getOwnerById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID of the owner."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Fetched owner",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseOwner"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Owner not found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update owner by ID",
+        "operationId": "updateOwner",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID of the owner."
+          }
+        ],
+        "requestBody": {
+          "description": "Updated owner details",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Owner"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Updated owner",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseOwner"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Owner not found"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete owner by ID",
+        "operationId": "deleteOwner",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID of the owner."
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Owner deleted successfully"
+          },
+          "404": {
+            "description": "Owner not found"
+          }
+        }
+      }
+    },
+    "/api/v1/owners/{ownerId}/defibrillators": {
+      "get": {
+        "summary": "Fetch all defibrillators for a specific owner",
+        "operationId": "getDefibsByOwner",
+        "parameters": [
+          {
+            "name": "ownerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID of the owner."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of defibrillators",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseListDefibrillator"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No defibrillators found for the owner"
+          }
+        }
+      }
+    },
+    "/api/v1/defibrillators/connected": {
+      "get": {
+        "summary": "Fetch all defibrillators connected to EMS",
+        "operationId": "getConnectedDefibrillators",
+        "responses": {
+          "200": {
+            "description": "List of connected defibrillators",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseListDefibrillator"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/defibrillators/{defibId}/electrodes": {
+      "get": {
+        "summary": "Fetch all electrodes for a specific defibrillator",
+        "operationId": "getElectrodesByDefibrillator",
+        "parameters": [
+          {
+            "name": "defibId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "description": "ID of the defibrillator."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of electrodes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponseListElectrode"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No electrodes found for the defibrillator"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Owner": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          }
+        }
+      },
+      "Defibrillator": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "serialNumber": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "publiclyAccessible": {
+            "type": "boolean"
+          },
+          "connectedToEms": {
+            "type": "boolean"
+          },
+          "owner": {
+            "$ref": "#/components/schemas/Owner"
+          },
+          "installationDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "lastServiceDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "nextServiceDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "locationAddress": {
+            "type": "string"
+          }
+        }
+      },
+      "Electrode": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "defibrillator": {
+            "$ref": "#/components/schemas/Defibrillator"
+          },
+          "serialNumber": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "expirationDate": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "ApiResponseOwner": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "$ref": "#/components/schemas/Owner"
+          }
+        }
+      },
+      "ApiResponseListOwner": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Owner"
+            }
+          }
+        }
+      },
+      "ApiResponseListDefibrillator": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Defibrillator"
+            }
+          }
+        }
+      },
+      "ApiResponseListElectrode": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Electrode"
+            }
+          }
+        }
+      }
+    }
+  }
+}

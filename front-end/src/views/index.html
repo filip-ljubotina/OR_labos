@@ -20,6 +20,7 @@
     <ul>
         <li><a href="/AVD_RH.csv" download>Preuzmi CSV format</a></li>
         <li><a href="/AVD_RH.json" download>Preuzmi JSON format</a></li>
+        <div id="auth-buttons"></div>
     </ul>
 
     <h2>Metapodaci</h2>
@@ -61,5 +62,26 @@
     <h2>Pristup i pregled podataka</h2>
     <p>Za pregled i filtriranje podataka, posjetite <a href="datatable">stranicu s podatkovnom tablicom</a>.</p>
 </body>
+<script>
+    fetch('/auth-status')
+        .then(response => response.json())
+        .then(data => {
+            const authButtonsDiv = document.getElementById('auth-buttons');
+            if (data.isAuthenticated) {
+                authButtonsDiv.innerHTML = `
+                    <a href="/logout" class="btn">Odjava</a>
+                    <a href="/profile" class="btn">Profil</a>
+                    <p><a href="/refresh">Osvježi preslike</a></p>
+                `;
+            } else {
+                authButtonsDiv.innerHTML = `
+                    <a href="/login" class="btn">Prijava</a>
+                `;
+            }
+        })
+        .catch(error => {
+            console.error('Greška pri dohvaćanju statusa prijave:', error);
+        });
+</script>
 
 </html>

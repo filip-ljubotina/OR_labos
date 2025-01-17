@@ -1,13 +1,11 @@
-serijski_broj_defibrilatora,ime_vlasnika,adresa_vlasnika,model_defibrilatora,lokacija_defibrilatora,javno_dostupan,povezan_s_hitnom_službom,datum_instalacije,datum_zadnjeg_servisa,datum_sljedećeg_servisa,serijski_broj_elektrode,vrsta_elektrode,rok_trajanja_elektrode
-X12L580716,Nastavni zavod za hitnu medicinu Grada Zagreba,"Heinzelova 88, Zagreb",Zoll AED 3,Trg kralja Tomislava 12,t,t,,2024-01-10,2025-01-10,X12L580716_CPRD,CPR-D,2025-12-31
-X12L580716,Nastavni zavod za hitnu medicinu Grada Zagreba,"Heinzelova 88, Zagreb",Zoll AED 3,Trg kralja Tomislava 12,t,t,,2024-01-10,2025-01-10,X12L580716_STATPAD,Stat Padz II,2026-06-30
-Y13H023789,Zavod za hitnu medicinu Dubrovačko-neretvanske županije,"Ante Šercera 4b, Dubrovnik",Zoll AED 3,"Ante Šercera 4b, Dubrovnik",f,f,,,2025-03-15,Y13H023789_CPRD,CPR-D,2025-12-31
-X13K634321,HGSS - Stanica Dubrovnik,"Liechtensteinov put 31A, Dubrovnik",Zoll AED Pro,"Tisno BB, Opuzen",f,f,,2024-09-15,2025-09-15,X13K634321_CPRD,CPR-D,2025-12-31
-X13K634321,HGSS - Stanica Dubrovnik,"Liechtensteinov put 31A, Dubrovnik",Zoll AED Pro,"Tisno BB, Opuzen",f,f,,2024-09-15,2025-09-15,X13K634321_STATPAD,Stat Padz II,2026-06-30
-X07E114767,"Poliklinika ""Dr. Brajčić""","Padre Perice 6, Dubrovnik",Zoll AED+,"Padre Perice 6, Dubrovnik""",f,f,,2024-02-02,2025-02-02,X07E114767_CPRD,CPR-D,2025-12-31
-X13H620715,Ministarstvo unutarnjih poslova RH,"Ilica 335, Zagreb",Zoll AED+,Avenija Gojka Šuška 1,f,t,2020-03-12,2024-03-12,2025-03-12,X13H620715_CPRD,CPR-D,2025-12-31
-X20K317210,Kardian d.o.o.,"Ulica Aleksandra Hondla 2/9, Zagreb",Zoll AED 3,"Ulica Aleksandra Hondla 2/9, Zagreb",f,t,2020-04-03,2024-04-03,2025-04-03,X20K317210_CPRD,CPR-D,2025-12-31
-X17C903307,Ministarstvo hrvatskih branitelja,"Trg Nevenke Topalušić 1, Zagreb",Zoll AED 3,"Trg Nevenke Topalušić 1, 10000 Zagreb",t,t,,2024-09-29,2025-09-29,X17C903307_CPRD,CPR-D,2025-12-31
-X14E676604,"KBC ""Sestre milosrdnice""","Vinogradska 29, Zagreb",Zoll AED+,"Vinogradska 29, Zagreb",f,f,2014-10-17,2024-10-17,2025-10-17,X14E676604_CPRD,CPR-D,2025-12-31
-X14E677441,"KBC ""Sestre milosrdnice""","Vinogradska 29, Zagreb",Zoll AED 3,"Vinogradska 29, Zagreb",f,f,2014-10-17,2024-10-17,2025-10-17,X14E677441_CPRD,CPR-D,2025-12-31
-X16H859351,Dječja bolnica Srebrnjak,"Srebrnjak 100, Zagreb",Zoll AED 3,"Srebrnjak 100, Zagreb, Dnevna bolnica",f,t,,2024-05-10,2025-05-10,X16H859351_CPRD,CPR-D,2025-12-31
+serijski_broj_defibrilatora,ime_vlasnika,adresa_vlasnika,model_defibrilatora,lokacija_defibrilatora,javno_dostupan,povezan_s_hitnom_službom,datum_instalacije,datum_zadnjeg_servisa,datum_sljedećeg_servisa,elektrode
+"X12L580716","Nastavni zavod za hitnu medicinu Grada Zagreba","Heinzelova 88, Zab","Zoll AED 3","Trg kralja Tomislava 12","t","t","","2024-01-09","2025-01-09","X12L580716_CPRD|CPR-D|2025-12-30;X12L580716_STATPAD|Stat Padz II|2026-06-29"
+"Y13H023789","Zavod za hitnu medicinu Dubrovačko-neretvanske županije","Ante Šercera 4b, Dubrovnik","Zoll AED 3","Ante Šercera 4b, Dubrovnik","f","f","","","2025-03-14","Y13H023789_CPRD|CPR-D|2025-12-30"
+"X13K634321","HGSS - Stanica Dubrovnik","Liechtensteinov put 31A, Dubrovnik","Zoll AED Pro","Tisno BB, Opuzen","f","f","","2024-09-14","2025-09-14","X13K634321_CPRD|CPR-D|2025-12-30;X13K634321_STATPAD|Stat Padz II|2026-06-29"
+"X07E114767","Poliklinika Dr. Brajčić","Padre Perice 6, Dubrovnik","Zoll AED+","Padre Perice 6, Dubrovnik","f","f","","2024-02-01","2025-02-01","X07E114767_CPRD|CPR-D|2025-12-30"
+"X13H620715","Ministarstvo unutarnjih poslova RH","Ilica 335, Zagreb","Zoll AED+","Avenija Gojka Šuška 1","f","t","2020-03-11","2024-03-11","2025-03-11","X13H620715_CPRD|CPR-D|2025-12-30"
+"X20K317210","Kardian d.o.o.","Ulica Aleksandra Hondla 2/9, Zagreb","Zoll AED 3","Ulica Aleksandra Hondla 2/9, Zagreb","f","t","2020-04-02","2024-04-02","2025-04-02","X20K317210_CPRD|CPR-D|2025-12-30"
+"X17C903307","Ministarstvo hrvatskih branitelja","Trg Nevenke Topalušić 1, Zagreb","Zoll AED 3","Trg Nevenke Topalušić 1, 10000 Zagreb","t","t","","2024-09-28","2025-09-28","X17C903307_CPRD|CPR-D|2025-12-30"
+"X14E676604","KBC Sestre milosrdnice","Vinogradska 29, Zagreb","Zoll AED+","Vinogradska 29, Zagreb","f","f","2014-10-16","2024-10-16","2025-10-16","X14E676604_CPRD|CPR-D|2025-12-30"
+"X14E677441","KBC Sestre milosrdnice","Vinogradska 29, Zagreb","Zoll AED 3","Vinogradska 29, Zagreb","f","f","2014-10-16","2024-10-16","2025-10-16","X14E677441_CPRD|CPR-D|2025-12-30"
+"X16H859351","Dječja bolnica Srebrnjak","Srebrnjak 100, Zagreb","Zoll AED 3","Srebrnjak 100, Zagreb, Dnevna bolnica","f","t","","2024-05-09","2025-05-09","X16H859351_CPRD|CPR-D|2025-12-30"
